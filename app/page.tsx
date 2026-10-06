@@ -33,11 +33,11 @@ export default function Home() {
               <ul className="space-y-5 text-gray-800">
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">1</span>
-                  <span className="text-base md:text-lg leading-relaxed">Pilih salah satu kalender yang sesuai dengan jadwal Anda.</span>
+                  <span className="text-base md:text-lg leading-relaxed">Buka kalender Katrine dan pilih jadwal yang sesuai dengan Anda.</span>
                 </li>
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">2</span>
-                  <span className="text-base md:text-lg leading-relaxed">Jika kalender penuh, silahkan cari di kalender lain.</span>
+                  <span className="text-base md:text-lg leading-relaxed">Jika jadwal penuh, silahkan hubungi kami lewat WhatsApp.</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-red-600 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">⚠️</span>
@@ -53,7 +53,7 @@ export default function Home() {
               Pilih Waktu Interview Anda
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-5 md:gap-8">
+            <div className="max-w-xl mx-auto">
               {/* Calendar 1 - Katrine */}
               <a
                 href="https://calendar.app.google/RDULsyXvqm6GjT2Z7"
@@ -64,7 +64,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4 md:mb-6">
                   <div className="text-4xl md:text-5xl">📅</div>
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
-                    Jadwal 1
+                    Jadwal Interview
                   </span>
                 </div>
 
@@ -77,32 +77,6 @@ export default function Home() {
 
                 <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
                   Buka Kalender Katrine →
-                </div>
-              </a>
-
-              {/* Calendar 2 - Jana */}
-              <a
-                href="https://calendar.app.google/iw5yzZoaqKQz5WDB8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
-              >
-                <div className="flex items-start justify-between mb-4 md:mb-6">
-                  <div className="text-4xl md:text-5xl">📅</div>
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
-                    Jadwal 2
-                  </span>
-                </div>
-
-                <h4 className="text-2xl font-bold text-gray-900 mb-2">Jana</h4>
-                <p className="text-gray-600 text-sm font-medium mb-4 md:mb-6">Interview Coordinator</p>
-
-                <p className="text-gray-700 text-base leading-relaxed mb-6 md:mb-8">
-                  Klik tombol di bawah untuk melihat jadwal ketersediaan Jana dan pesan interview Anda sekarang.
-                </p>
-
-                <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
-                  Buka Kalender Jana →
                 </div>
               </a>
             </div>
