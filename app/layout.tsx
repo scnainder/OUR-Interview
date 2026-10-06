@@ -1,10 +1,15 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'OUR Blooming Academy - Pesan Jadwal Interview',
   description: 'Pesan jadwal interview dengan Katrine atau Jana di OUR Blooming Academy. Pilih tanggal yang sesuai dengan jadwal Anda.',
   keywords: 'interview, jadwal, OUR, Blooming Academy, Kaigo',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
