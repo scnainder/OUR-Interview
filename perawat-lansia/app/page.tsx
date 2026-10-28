@@ -57,6 +57,38 @@ export default function Home() {
             </div>
           </div>
 
+          {/* How to book (animated) */}
+          <div className="mb-10 md:mb-20">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-2 text-gray-900 leading-snug">
+              Cara Memesan Interview
+            </h3>
+            <p className="text-center text-gray-600 text-base mb-6 md:mb-10">4 langkah mudah, hanya 1 menit.</p>
+
+            <ol className="grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
+              {[
+                { icon: '👆', title: 'Buka kalender', text: 'Tekan tombol "Buka Kalender Perawat Lansia" di bawah.' },
+                { icon: '📅', title: 'Pilih tanggal', text: 'Pilih tanggal mulai 18 November yang tersedia.' },
+                { icon: '🕐', title: 'Pilih jam', text: 'Pilih jam interview yang cocok dengan jadwal Anda.' },
+                { icon: '✅', title: 'Isi data & pesan', text: 'Isi nama, email, dan nomor WhatsApp, lalu tekan Pesan.' },
+              ].map((step, i) => (
+                <li
+                  key={step.title}
+                  className="howto-step flex items-start gap-4 bg-white border-2 border-blue-200 rounded-xl p-4 md:p-5"
+                  style={{ animationDelay: `${i * 2}s` }}
+                >
+                  <div className="howto-icon flex-shrink-0 w-12 h-12 rounded-full bg-blue-700 text-white flex items-center justify-center text-2xl relative" style={{ animationDelay: `${i * 2}s` }}>
+                    {step.icon}
+                    <span className="absolute -top-1 -left-1 w-6 h-6 rounded-full bg-yellow-300 text-blue-900 text-sm font-bold flex items-center justify-center">{i + 1}</span>
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-900 text-base md:text-lg leading-snug">{step.title}</p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed mt-1">{step.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+
           {/* Calendar Selection */}
           <div className="mb-10 md:mb-24">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 md:mb-16 text-gray-900 leading-snug">

@@ -12,3 +12,19 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
 }
+
+/* Animated "how to book" steps: highlight each step in turn (8s loop) */
+@keyframes howto-pulse {
+  0%, 25%, 100% { border-color: #bfdbfe; box-shadow: none; transform: scale(1); }
+  4%, 21% { border-color: #1d4ed8; box-shadow: 0 8px 20px rgba(29, 78, 216, 0.25); transform: scale(1.02); }
+}
+@keyframes howto-bounce {
+  0%, 25%, 100% { transform: translateY(0); }
+  8% { transform: translateY(-6px); }
+  14% { transform: translateY(0); }
+}
+.howto-step { animation: howto-pulse 8s ease-in-out infinite; }
+.howto-icon { animation: howto-bounce 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .howto-step, .howto-icon { animation: none; }
+}
