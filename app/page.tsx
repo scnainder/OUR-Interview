@@ -127,6 +127,7 @@ export default function Home() {
                 <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
                   Buka Kalender Katrine →
                 </div>
+              </a>
             </div>
           </div>
 
