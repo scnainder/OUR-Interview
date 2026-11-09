@@ -77,33 +77,7 @@ export default function Home() {
             </h3>
 
             <div className="grid sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
-              {/* Calendar 1 - Jana */}
-              <a
-                href="https://calendar.app.google/PVK4VaqK5yXTZXoQA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
-              >
-                <div className="flex items-start justify-between mb-4 md:mb-6">
-                  <div className="text-4xl md:text-5xl">📅</div>
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
-                    Jadwal Interview
-                  </span>
-                </div>
-
-                <h4 className="text-2xl font-bold text-gray-900 mb-2">Jana</h4>
-                <p className="text-gray-600 text-sm font-medium mb-4 md:mb-6">Interview Coordinator</p>
-
-                <p className="text-gray-700 text-base leading-relaxed mb-6 md:mb-8">
-                  Klik tombol di bawah untuk melihat jadwal ketersediaan Jana dan pesan interview Anda sekarang.
-                </p>
-
-                <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
-                  Buka Kalender Jana →
-                </div>
-              </a>
-
-              {/* Calendar 2 - Katrine */}
+              {/* Calendar 1 - Katrine */}
               <a
                 href="https://calendar.app.google/RDULsyXvqm6GjT2Z7"
                 target="_blank"
@@ -126,6 +100,32 @@ export default function Home() {
 
                 <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
                   Buka Kalender Katrine →
+                </div>
+              </a>
+
+              {/* Calendar 2 - Jana */}
+              <a
+                href="https://calendar.app.google/PVK4VaqK5yXTZXoQA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
+              >
+                <div className="flex items-start justify-between mb-4 md:mb-6">
+                  <div className="text-4xl md:text-5xl">📅</div>
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
+                    Jadwal Interview
+                  </span>
+                </div>
+
+                <h4 className="text-2xl font-bold text-gray-900 mb-2">Jana</h4>
+                <p className="text-gray-600 text-sm font-medium mb-4 md:mb-6">Interview Coordinator</p>
+
+                <p className="text-gray-700 text-base leading-relaxed mb-6 md:mb-8">
+                  Klik tombol di bawah untuk melihat jadwal ketersediaan Jana dan pesan interview Anda sekarang.
+                </p>
+
+                <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
+                  Buka Kalender Jana →
                 </div>
               </a>
             </div>
