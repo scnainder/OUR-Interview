@@ -71,7 +71,7 @@ export default function Home() {
             <div className="max-w-xl mx-auto">
               {/* Calendar 1 - Katrine */}
               <a
-                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PZPh6eBuiuzBC3GNBMp0hEv7JVHe1fkVibhzkICw-lODxOgWzEsDkaxbHdTF2XyxYWPM2em3C"
+                href="https://calendar.app.google/XngFVnVe5bCyBtZm7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
