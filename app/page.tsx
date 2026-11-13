@@ -7,7 +7,11 @@ export default function Home() {
       <div className="bg-red-600 text-white">
         <div className="mx-auto px-4 py-2.5 max-w-5xl flex items-center justify-center gap-2 text-center">
           <span className="text-sm sm:text-base">⚠️</span>
-          <p className="text-xs sm:text-sm font-semibold leading-snug">Slot Interview Terbatas! Segera pesan sebelum slotnya habis.</p>
+          <div className="text-xs sm:text-sm leading-snug space-y-0.5">
+            <p className="font-bold">Slot Interview Terbatas!</p>
+            <p className="font-semibold">Hanya tersisa 27 November dan 1, 2, 3 Desember saja!</p>
+            <p className="font-bold">BURUAN PESAN SEBELUM SLOT PENDAFTARANNYA HABIS!</p>
+          </div>
         </div>
       </div>
 
