@@ -10,7 +10,7 @@ export default function Home() {
           <span className="text-sm sm:text-base">⚠️</span>
           <div className="text-xs sm:text-sm leading-snug space-y-0.5">
             <p className="font-bold">Slot Interview Terbatas!</p>
-            <p className="font-semibold">Hanya tersisa 27 November dan 1, 2, 3 Desember saja!</p>
+            <p className="font-semibold">Hanya tersisa 23, 24, 25 November saja!</p>
             <p className="font-bold">BURUAN PESAN SEBELUM SLOT PENDAFTARANNYA HABIS!</p>
           </div>
         </div>
