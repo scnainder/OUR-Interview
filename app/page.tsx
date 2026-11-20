@@ -58,7 +58,7 @@ export default function Home() {
               <ul className="space-y-5 text-gray-800">
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">1</span>
-                  <span className="text-base md:text-lg leading-relaxed">Pilih salah satu koordinator (Katrine atau Jana) dan buka kalendernya untuk melihat jadwal yang sesuai dengan Anda.</span>
+                  <span className="text-base md:text-lg leading-relaxed">Pilih salah satu koordinator dan buka kalendernya untuk melihat jadwal yang sesuai dengan Anda.</span>
                 </li>
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">2</span>
