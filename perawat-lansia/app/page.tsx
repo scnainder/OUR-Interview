@@ -45,7 +45,7 @@ export default function Home() {
               <ul className="space-y-5 text-gray-800">
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">1</span>
-                  <span className="text-base md:text-lg leading-relaxed">Buka kalender Reyza atau Katrine khusus Perawat Lansia dan pilih tanggal mulai 18 November.</span>
+                  <span className="text-base md:text-lg leading-relaxed">Buka kalender Katrine atau Reyza khusus Perawat Lansia dan pilih tanggal mulai 18 November.</span>
                 </li>
                 <li className="flex items-start gap-3 md:gap-4">
                   <span className="text-blue-700 font-bold text-xl md:text-2xl leading-snug flex-shrink-0 w-6 text-center">2</span>
@@ -69,33 +69,7 @@ export default function Home() {
             </h3>
 
             <div className="max-w-xl mx-auto space-y-6 md:space-y-8">
-              {/* Calendar 1 - Reyza */}
-              <a
-                href="https://calendar.app.google/78QPFfsfuTnWbFkX9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
-              >
-                <div className="flex items-start justify-between mb-4 md:mb-6">
-                  <div className="text-4xl md:text-5xl">📅</div>
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
-                    Jadwal Interview
-                  </span>
-                </div>
-
-                <h4 className="text-2xl font-bold text-gray-900 mb-2">Reyza</h4>
-                <p className="text-gray-600 text-sm font-medium mb-4 md:mb-6">Interview Coordinator · Perawat Lansia</p>
-
-                <p className="text-gray-700 text-base leading-relaxed mb-6 md:mb-8">
-                  Klik tombol di bawah untuk melihat jadwal ketersediaan Reyza untuk Perawat Lansia dan pesan interview Anda sekarang.
-                </p>
-
-                <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
-                  Buka Kalender Reyza →
-                </div>
-              </a>
-
-              {/* Calendar 2 - Katrine */}
+              {/* Calendar 1 - Katrine */}
               <a
                 href="https://calendar.app.google/XngFVnVe5bCyBtZm7"
                 target="_blank"
@@ -118,6 +92,32 @@ export default function Home() {
 
                 <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
                   Buka Kalender Perawat Lansia →
+                </div>
+              </a>
+
+              {/* Calendar 2 - Reyza */}
+              <a
+                href="https://calendar.app.google/78QPFfsfuTnWbFkX9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white border-2 border-blue-200 p-6 md:p-10 rounded-xl hover:border-blue-700 hover:shadow-xl transition duration-300"
+              >
+                <div className="flex items-start justify-between mb-4 md:mb-6">
+                  <div className="text-4xl md:text-5xl">📅</div>
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm">
+                    Jadwal Interview
+                  </span>
+                </div>
+
+                <h4 className="text-2xl font-bold text-gray-900 mb-2">Reyza</h4>
+                <p className="text-gray-600 text-sm font-medium mb-4 md:mb-6">Interview Coordinator · Perawat Lansia</p>
+
+                <p className="text-gray-700 text-base leading-relaxed mb-6 md:mb-8">
+                  Klik tombol di bawah untuk melihat jadwal ketersediaan Reyza untuk Perawat Lansia dan pesan interview Anda sekarang.
+                </p>
+
+                <div className="block w-full text-center px-6 py-4 min-h-[48px] bg-blue-700 text-white font-bold rounded-lg group-hover:bg-blue-800 transition">
+                  Buka Kalender Reyza →
                 </div>
               </a>
             </div>
