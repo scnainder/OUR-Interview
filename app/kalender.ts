@@ -9,10 +9,10 @@ export type Kalender = {
 }
 
 export const kalenderList: Kalender[] = [
-  { nama: 'Sekar', link: 'https://calendar.app.google/rkZN4dFC7BzpR3Bn7', aktif: true },
   { nama: 'Anya', link: 'https://calendar.app.google/dmFvj3qem7CsibJD7', aktif: true },
-  { nama: 'Jana', link: 'https://calendar.app.google/PVK4VaqK5yXTZXoQA', aktif: true },
   { nama: 'Katrine', link: 'https://calendar.app.google/RDULsyXvqm6GjT2Z7', aktif: true },
+  { nama: 'Sekar', link: 'https://calendar.app.google/rkZN4dFC7BzpR3Bn7', aktif: true },
+  { nama: 'Jana', link: 'https://calendar.app.google/PVK4VaqK5yXTZXoQA', aktif: true },
   // Disimpan untuk dipakai lagi nanti (tidak ditampilkan saat ini).
   { nama: 'Reyza', link: 'https://calendar.app.google/78QPFfsfuTnWbFkX9', aktif: false },
 ]
