@@ -1,7 +1,72 @@
 import { caraMemilihHtml } from './cara-memilih'
 import { kalenderList } from './kalender'
+import { slotTerakhir, absenUrl } from './slot-terakhir'
+
+function SlotTerakhir() {
+  const t = slotTerakhir
+  return (
+    <>
+      <div className="bg-red-600 text-white">
+        <div className="mx-auto px-4 py-2.5 max-w-5xl text-center text-xs sm:text-sm font-bold">
+          ⚠️ SLOT INTERVIEW/WAWANCARA TERAKHIR
+        </div>
+      </div>
+      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-12 md:py-24">
+        <div className="mx-auto px-5 sm:px-6 max-w-4xl space-y-3">
+          <h1 className="text-3xl sm:text-5xl font-bold leading-tight">SLOT INTERVIEW/WAWANCARA TERAKHIR</h1>
+          <h2 className="text-lg sm:text-2xl font-semibold text-blue-100">{t.program}</h2>
+        </div>
+      </section>
+      <section className="py-10 md:py-20 bg-white">
+        <div className="mx-auto px-5 sm:px-6 max-w-3xl space-y-8">
+          <div className="bg-blue-50 border-l-4 border-blue-700 rounded-lg p-5 md:p-8 space-y-4">
+            <p className="text-base md:text-lg text-gray-800">Silahkan hadir pada interview di tanggal:</p>
+            <p className="text-sm font-bold text-blue-700 tracking-wide">INTERVIEW/WAWANCARA</p>
+            <p className="text-2xl md:text-4xl font-bold text-gray-900 leading-snug">{t.tanggal}</p>
+            <p className="text-xl md:text-2xl font-semibold text-gray-900">Jam : {t.jam}</p>
+            <div>
+              <p className="text-sm text-gray-600 mb-2">GOOGLE MEET (hanya perlu mengunjungi tautan ini):</p>
+              <a
+                href={'https://' + t.meet}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center px-6 py-4 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-lg break-all"
+              >
+                {t.meet}
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-red-50 border-2 border-red-300 rounded-xl p-5 md:p-8">
+            <p className="text-lg md:text-xl font-bold text-red-700 leading-snug">
+              Jika ingin lanjut, Anda harus HADIR!! Ini adalah kesempatan terakhir.
+            </p>
+          </div>
+
+          <p className="text-base md:text-lg leading-relaxed text-gray-800">
+            Sebelum INTERVIEW, Anda harus memahami apa itu OUR BLOOMING ACADEMY. Anda bisa melihat Instagram kami, terutama bagian yang di-pin/highlight.
+          </p>
+
+          <div className="space-y-3">
+            <p className="text-base md:text-lg font-bold text-gray-900">Anda harus absen di sini:</p>
+            <a
+              href={absenUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center px-6 py-4 min-h-[48px] bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"
+            >
+              Isi Absen Kehadiran →
+            </a>
+            <p className="text-sm text-gray-500">Tanggal, jam, dan tautan Google Meet sudah terisi otomatis di formulir.</p>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default function Home() {
+  if (slotTerakhir.AKTIF) return <SlotTerakhir />
   return (
     <>
       {/* Top banner */}
